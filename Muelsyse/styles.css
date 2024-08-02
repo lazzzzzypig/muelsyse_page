@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.muelsyse {
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(94, 207, 38, 0.5); /* 半透明黑色背景 */
+    color: white; /* 白色文字 */
+    padding: 10px;
+    font-size: 24px; /* 设置字体大小 */
+    text-shadow: 1px 1px 2px black; /* 黑色文字阴影 */
+    border: 2px solid black; /* 黑色边框 */
+    z-index: 3;
+}
+
+.foreground {
+    position: absolute;
+    width: 39%;
+    top: 15%;
+    left: 31%;
+}
+
+.button-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.foreground-buttons, .background-buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.foreground-buttons {
+    top: 10px;
+    left: 10px;
+}
+
+.background-buttons {
+    bottom: 10px;
+    left: 10px;
+}
+
+button {
+    width: 150px; /* 按钮宽度增加一倍 */
+    height: 50px; /* 按钮高度 */
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 15px; /* 增加字体大小 */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start; /* 左对齐 */
+    gap: 10px; /* 图片和文字之间的间距 */
+    gap: 10px; /* 图片和文字之间的间距 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    color: white; /* 白色字体 */
+    border: 2px solid black; /* 黑色边框 */
+    text-shadow: 2px 2px 5px black; /* 黑色文字阴影 */
+}
+
+button img {
+    width: 56px;
+    height: 40px;
+}
+
+button span {
+    flex: 1; /* 使文字占据剩余空间 */
+    -webkit-text-stroke: 0.15px black; /* 设置黑色边框 */
+    font-weight: bold; /* 使字体更粗 */
+}
+
+button.active {
+    background-color: rgba(94, 207, 38, 0.5); /* 变成半透明绿色背景 */
+}
